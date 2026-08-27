@@ -76,6 +76,8 @@ img{max-width:100%;display:block}
   .hero-meta-dot{display:none !important}
   .price-wrap{padding-left:0 !important;padding-right:0 !important}
   .price-card{border-radius:0 !important;padding:48px 24px !important}
+  .price-col{align-items:center !important;text-align:center !important}
+  .pay-btn{letter-spacing:.04em !important;padding:18px 30px !important}
 }
 @supports (-webkit-touch-callout:none){
   .hero-bg{background-attachment:scroll !important}
@@ -281,19 +283,19 @@ img{max-width:100%;display:block}
 
     <div class="grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:44px 70px">
       <div>
-        <h3 style="font-family:'Manrope';font-weight:700;font-size:20px;color:#B0D0D1;margin-bottom:14px">Теория</h3>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:20px;color:#F0DDBB;margin-bottom:14px">Теория</h3>
         <p style="color:rgba(250,253,253,.72);font-size:16.5px">Не конспект из методички прошлого века, а разговор о том, откуда взялось Рэйки, что стоит за иероглифом, который все видели, но мало кто может объяснить. Что такое энергия Рэйки и где её источник, чем она является и чем точно не является, разбор мифов, которые вокруг этого накопились. Рэйки рядом с медициной, а не вместо неё. Правильное произношение, два аспекта, Рэй и Ки. Когда практика полезна, что такое целительский кризис, какие бывают стили и четыре ступени пути.</p>
       </div>
       <div>
-        <h3 style="font-family:'Manrope';font-weight:700;font-size:20px;color:#B0D0D1;margin-bottom:14px">Практика</h3>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:20px;color:#F0DDBB;margin-bottom:14px">Практика</h3>
         <p style="color:rgba(250,253,253,.72);font-size:16.5px">Как сделать сеанс себе, принципы, медитация, пара дополнительных техник. Как сделать сеанс другому, тут уже свои правила и своя этика, потому что чужое тело не ваше тело. Оба сеанса вы делаете руками на семинаре, а не читаете о них дома. Семинар - это двухдневная работа над вашей проблемой. Вы трансформируетесь.</p>
       </div>
       <div>
-        <h3 style="font-family:'Manrope';font-weight:700;font-size:20px;color:#B0D0D1;margin-bottom:14px">Рэйки в экстренных ситуациях</h3>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:20px;color:#F0DDBB;margin-bottom:14px">Рэйки в экстренных ситуациях</h3>
         <p style="color:rgba(250,253,253,.72);font-size:16.5px">Высокая температура, сильная боль, сердечный приступ, обморок, несчастный случай, гипертония, переломы, ожоги как то, что можно сделать, пока едет помощь, а не вместо неё. Отдельно, дети, пожилые, неизлечимые заболевания: там своя мера аккуратности.</p>
       </div>
       <div>
-        <h3 style="font-family:'Manrope';font-weight:700;font-size:20px;color:#B0D0D1;margin-bottom:14px">Рэйки в быту</h3>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:20px;color:#F0DDBB;margin-bottom:14px">Рэйки в быту</h3>
         <p style="color:rgba(250,253,253,.72);font-size:16.5px">Животные, растения, вода, еда, пространство дома, простые техники для того, что происходит каждый день, а не раз в год на ретрите.</p>
       </div>
     </div>
@@ -350,7 +352,7 @@ img{max-width:100%;display:block}
         <p style="color:rgba(250,253,253,.58);font-size:15px">Если вы не хотите ждать группу, вы можете пройти индивидуальное обучение. Стоимость обсуждается отдельно.</p>
       </div>
 
-      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:28px">
+      <div class="price-col" style="display:flex;flex-direction:column;align-items:flex-start;gap:28px">
         <div>
           <div class="price-num" style="font-family:'Prata',serif;font-size:56px;color:#F0DDBB;line-height:1;white-space:nowrap">40 000 ₽</div>
           <div style="font-size:16px;color:rgba(240,221,187,.65);margin-top:6px">23 000 турецких лир</div>
@@ -365,7 +367,7 @@ img{max-width:100%;display:block}
           <span>Я согласен(на) с условиями <a href="oferta.html" target="_blank" style="color:#B0D0D1;border-bottom:1px solid rgba(176,208,209,.5)">публичной оферты</a> и даю согласие на обработку персональных данных для регистрации на семинар.</span>
         </label>
 
-        <a id="pay-btn" href="#" aria-disabled="true" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;padding:18px 42px;border-radius:999px;background:#DE5B4E;color:#fff;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:none;opacity:.55;pointer-events:none;transition:all .25s ease">Оплатить и записаться</a>
+        <a id="pay-btn" class="pay-btn" href="#" aria-disabled="true" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;padding:18px 42px;border-radius:999px;background:#DE5B4E;color:#fff;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:none;opacity:.55;pointer-events:none;transition:all .25s ease">Оплатить и записаться</a>
       </div>
     </div>
   </div>
