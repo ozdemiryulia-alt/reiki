@@ -74,6 +74,8 @@ img{max-width:100%;display:block}
   .hero-meta{flex-direction:column;gap:6px !important;padding:0 40px 56px !important}
   .hero-meta-item{font-size:17px !important}
   .hero-meta-dot{display:none !important}
+  .price-wrap{padding-left:0 !important;padding-right:0 !important}
+  .price-card{border-radius:0 !important;padding:48px 24px !important}
 }
 @supports (-webkit-touch-callout:none){
   .hero-bg{background-attachment:scroll !important}
@@ -331,8 +333,8 @@ img{max-width:100%;display:block}
 </div>
 
 <!-- ЦЕНА / ОПЛАТА -->
-<div class="wrap" style="padding-bottom:80px">
-  <div style="background:linear-gradient(155deg,#14454B 0%,#0F2A2E 100%);border-radius:8px;padding:64px;border:1px solid rgba(216,190,155,.22);position:relative;overflow:hidden">
+<div class="wrap price-wrap" style="padding-bottom:80px">
+  <div class="price-card" style="background:linear-gradient(155deg,#14454B 0%,#0F2A2E 100%);border-radius:8px;padding:64px;border:1px solid rgba(216,190,155,.22);position:relative;overflow:hidden">
     <img src="assets/leaf-texture.jpg" alt=""
       style="position:absolute;right:0;bottom:0;width:340px;height:100%;object-fit:cover;object-position:right center;
       -webkit-mask-image:linear-gradient(to left,rgba(0,0,0,.55) 0%,rgba(0,0,0,.30) 45%,transparent 90%);
