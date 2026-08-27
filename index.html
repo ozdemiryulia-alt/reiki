@@ -3,297 +3,284 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Семинар 1 ступени Рэйки — Юлия Оздемир</title>
+<title>Семинар 1 ступени Рэйки · Юлия Оздемир</title>
 <meta name="description" content="Семинар 1 ступени Рэйки с Юлией Оздемир. 29–30 августа 2026, Анталья, Коньяалты.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  --water-000:#FAFDFD; --water-050:#F1F7F7; --water-100:#E4EFEF; --water-200:#CFE3E3;
-  --water-300:#B0D0D1; --water-400:#8CBCBD; --water-500:#6FA9AC; --water-600:#4B8F94;
-  --water-700:#33787E; --water-800:#1F5F66; --water-900:#14454B;
-  --ink-900:#0F2A2E; --ink-700:#234A50; --ink-500:#4E7175; --ink-300:#8FA9AB;
-  --air-000:#FFFFFF; --air-050:#FCFBF8; --air-100:#F6F3EC; --air-200:#EDE8DE; --air-300:#DED8CA;
-  --sand-100:#F5EADA; --sand-200:#EBDDC8; --sand-400:#D8BE9B; --sand-600:#B08E63; --sand-800:#6E5539;
-  --coral-100:#FBE4E0; --coral-300:#F0A79C; --coral-500:#DE5B4E; --coral-600:#C8483D;
-
-  --surface-page:var(--air-050); --surface-card:rgba(255,255,255,.66);
-  --surface-card-border:rgba(20,69,75,.10);
-  --text-title:var(--ink-900); --text-body:rgba(15,42,46,.76); --text-muted:rgba(15,42,46,.50);
-  --text-accent:var(--water-700); --line-hairline:rgba(20,69,75,.14); --line-strong:rgba(51,120,126,.40);
-  --accent:var(--water-700); --accent-hover:var(--water-600); --accent-coral:var(--coral-500);
-  --focus-ring:rgba(51,120,126,.50);
-
-  --font-display:"Prata","Times New Roman",serif;
-  --font-sans:"Manrope","Helvetica Neue",Arial,sans-serif;
-
-  --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px; --sp-6:32px; --sp-7:48px; --sp-8:72px; --sp-9:104px; --sp-10:144px;
-  --container:1200px; --container-narrow:780px;
-  --radius-2:8px; --radius-3:16px; --radius-soft:48px; --radius-pill:999px;
-  --shadow-soft:0 20px 50px -30px rgba(15,42,46,.20);
-  --dur-base:360ms; --ease-drift:cubic-bezier(.22,.61,.36,1);
-  --scrim-bottom:linear-gradient(to top,rgba(15,42,46,.72) 0%,rgba(15,42,46,.30) 46%,rgba(15,42,46,0) 82%);
-}
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--surface-page);color:var(--text-body);font-family:var(--font-sans);
-  font-size:18.5px;font-weight:400;line-height:1.72;letter-spacing:.008em;-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:var(--font-display);color:var(--text-title);font-weight:400;line-height:1.16;margin:0}
-h2{font-size:clamp(30px,3.6vw,46px)}
-h3{font-size:24px}
-p{margin:0 0 var(--sp-4)}
-a{color:var(--text-accent)}
+body{margin:0;background:#FCFBF8;color:rgba(15,42,46,.78);font-family:"Manrope","Helvetica Neue",Arial,sans-serif;
+  font-size:19px;font-weight:400;line-height:1.75;letter-spacing:.006em;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Prata","Times New Roman",serif;color:#0F2A2E;font-weight:400;line-height:1.14;margin:0}
+p{margin:0}
+a{color:#33787E}
+a:hover{color:#1F5F66}
 img{max-width:100%;display:block}
-.wrap{max-width:var(--container);margin:0 auto;padding:0 var(--sp-5)}
-.wrap-narrow{max-width:var(--container-narrow);margin:0 auto;padding:0 var(--sp-5)}
-section{padding:var(--sp-9) 0}
-.eyebrow{font-size:13px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--sand-600)}
-.hairline{height:1px;border:0;background:var(--line-hairline);margin:0}
-.ornament{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto var(--sp-6);width:fit-content}
-.ornament::before,.ornament::after{content:"";width:64px;height:1px;background:rgba(176,142,99,.5)}
-.ornament span{width:7px;height:7px;transform:rotate(45deg);background:var(--sand-600);display:block}
-
-/* hero */
-.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden;color:var(--air-050)}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
-.hero::after{content:"";position:absolute;inset:0;background:var(--scrim-bottom)}
-.hero-inner{position:relative;z-index:1;padding:var(--sp-8) var(--sp-5) var(--sp-9)}
-.hero-top{position:absolute;z-index:1;top:var(--sp-6);left:0;right:0;padding:0 var(--sp-5);
-  display:flex;justify-content:space-between;align-items:center;font-size:13px;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--sand-400)}
-.hero h1{font-size:clamp(38px,6vw,74px);color:#fff;max-width:14ch}
-.hero .lead{font-size:20px;color:rgba(250,253,253,.88);max-width:46ch;margin-top:var(--sp-4)}
-.hero-meta{display:flex;gap:var(--sp-6);flex-wrap:wrap;margin-top:var(--sp-6);font-size:15px;
-  letter-spacing:.12em;text-transform:uppercase;color:rgba(250,253,253,.82)}
-.hero-meta b{display:block;font-family:var(--font-display);font-size:22px;color:#fff;letter-spacing:0;
-  text-transform:none;margin-top:2px}
-
-/* quote */
-.quote-block{text-align:center;padding:var(--sp-8) 0}
-.quote-block blockquote{font-family:var(--font-display);font-size:clamp(22px,2.6vw,30px);
-  color:var(--text-title);max-width:26ch;margin:0 auto var(--sp-4);line-height:1.4}
-.quote-block cite{font-style:normal;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-muted)}
-
-/* master */
-.master{display:grid;grid-template-columns:340px 1fr;gap:var(--sp-8);align-items:center}
-.master img{border-radius:var(--radius-3);box-shadow:var(--shadow-soft)}
-.master .eyebrow{margin-bottom:var(--sp-3)}
-.master h2{margin-bottom:var(--sp-4)}
-
-/* причины */
-.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5)}
-.reason{background:var(--surface-card);border:1px solid var(--surface-card-border);border-radius:var(--radius-3);
-  padding:var(--sp-6);backdrop-filter:blur(16px)}
-.reason h3{font-size:19px;font-family:var(--font-sans);font-weight:600;color:var(--text-title);margin-bottom:var(--sp-3)}
-.reason p{font-size:16.5px;color:var(--text-body);margin:0}
-
-/* три карточки */
-.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5)}
-.trio-card{background:var(--air-000);border-radius:var(--radius-3);padding:var(--sp-6);border:1px solid var(--surface-card-border)}
-.trio-card .eyebrow{margin-bottom:var(--sp-3)}
-.trio-card h3{font-family:var(--font-display);font-weight:400;font-size:22px;margin-bottom:var(--sp-3)}
-.trio-card p{font-size:16.5px;margin:0}
-
-/* программа */
-.program{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-6)}
-.program-card{padding:var(--sp-6) 0;border-top:1px solid var(--line-hairline)}
-.program-card h3{font-size:20px;font-family:var(--font-sans);font-weight:600;color:var(--accent);margin-bottom:var(--sp-3)}
-.program-card p{font-size:16px;color:var(--text-body);margin:0}
-
-/* стоимость */
-.price-section{background:var(--water-900);color:var(--water-000);border-radius:var(--radius-soft);
-  padding:var(--sp-8) var(--sp-7);border:1px solid rgba(216,190,155,.28)}
-.price-section .eyebrow{color:var(--sand-400)}
-.price-grid{display:grid;grid-template-columns:1fr auto;gap:var(--sp-8);align-items:end;margin-top:var(--sp-5)}
-.price-num{font-family:var(--font-display);font-size:clamp(44px,5vw,64px);color:var(--sand-400);line-height:1}
-.price-num small{display:block;font-family:var(--font-sans);font-size:16px;color:rgba(216,190,155,.66);
-  font-weight:500;letter-spacing:.04em;margin-top:var(--sp-2)}
-.price-includes{font-size:16px;color:rgba(250,253,253,.80);margin-top:var(--sp-5)}
-.price-includes li{margin-bottom:6px}
-.price-includes ul{margin:var(--sp-3) 0 0;padding-left:20px}
-
-.consent{display:flex;gap:var(--sp-3);align-items:flex-start;margin:var(--sp-7) 0 var(--sp-5);
-  font-size:15px;color:rgba(250,253,253,.82);max-width:56ch}
-.consent input{margin-top:5px;width:18px;height:18px;accent-color:var(--coral-500);flex:0 0 auto}
-.consent a{color:var(--water-200);border-bottom:1px solid rgba(176,208,209,.5)}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  padding:16px 34px;border-radius:var(--radius-pill);font-size:14px;font-weight:600;
-  letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;
-  cursor:pointer;transition:all var(--dur-base) var(--ease-drift)}
-.btn-primary{background:var(--coral-500);color:#fff}
-.btn-primary:hover{background:var(--coral-600)}
-.btn-primary:disabled,.btn-primary[aria-disabled="true"]{opacity:.4;pointer-events:none}
-.btn-ghost{background:transparent;color:var(--water-200);border-color:rgba(176,208,209,.4)}
-.hint{font-size:13px;color:var(--water-300);margin-top:var(--sp-3)}
-
-/* footer */
-footer{padding:var(--sp-8) 0;text-align:center;border-top:1px solid var(--line-hairline)}
-footer .contacts{display:flex;gap:var(--sp-6);justify-content:center;flex-wrap:wrap;font-size:15px;margin-bottom:var(--sp-4)}
-footer .legal{font-size:13px;color:var(--text-muted)}
-footer .legal a{color:var(--text-muted)}
-
-@media (max-width:860px){
-  .master{grid-template-columns:1fr}
-  .master img{max-width:280px;margin:0 auto}
-  .reasons{grid-template-columns:1fr}
-  .trio{grid-template-columns:1fr}
-  .program{grid-template-columns:1fr}
-  .price-grid{grid-template-columns:1fr}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+.wrap-narrow{max-width:760px;margin:0 auto;padding:0 40px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:#B08E63}
+.ornament{display:flex;align-items:center;justify-content:center;gap:16px}
+.ornament i{width:72px;height:1px;background:rgba(176,142,99,.55);display:block}
+.ornament s{width:8px;height:8px;background:#B08E63;display:block;transform:rotate(45deg)}
+@media (max-width:900px){
+  .grid-2{grid-template-columns:1fr !important}
+  .grid-3{grid-template-columns:1fr !important}
+  h1{font-size:52px !important}
 }
 </style>
 </head>
 <body>
 
-<div class="hero">
-  <img src="assets/hero.jpg" alt="Юлия Оздемир проводит сеанс Рэйки">
-  <div class="hero-top">
-    <span>Юлия Оздемир · Мастер-Учитель Рэйки</span>
-    <span>Анталья</span>
+<!-- HERO -->
+<div style="position:relative;min-height:100vh;display:flex;flex-direction:column;color:#FCFBF8;overflow:hidden">
+  <img src="assets/hero.jpg" alt="Руки в жесте Рэйки над зеленью" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(15,42,46,.20) 0%, rgba(15,42,46,.10) 30%, rgba(15,42,46,.55) 72%, rgba(15,42,46,.86) 100%)"></div>
+
+  <div style="position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;padding:44px 40px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:#D8BE9B">
+    <span>Юлия Оздемир</span>
+    <span>Мастер-Учитель Рэйки</span>
   </div>
-  <div class="hero-inner wrap">
-    <h1>Семинар 1 ступени Рэйки</h1>
-    <p class="lead">Обучение методу естественного оздоровления и развития «Рэйки».</p>
-    <div class="hero-meta">
-      <div>Даты<b>29–30 августа 2026</b></div>
-      <div>Место<b>Анталья, Коньяалты</b></div>
-      <div>Формат<b>Группа, очно</b></div>
-    </div>
+
+  <div style="position:relative;z-index:1;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 40px 0;gap:28px">
+    <div class="eyebrow" style="color:#D8BE9B">Семинар 1 ступени</div>
+    <h1 style="font-size:104px;max-width:16ch;color:#fff">Рэйки</h1>
+    <p style="font-size:22px;color:rgba(252,251,248,.90);max-width:38ch;font-weight:300">Обучение методу естественного оздоровления и развития «Рэйки»</p>
   </div>
-</div>
 
-<div class="quote-block wrap-narrow">
-  <div class="ornament"><span></span></div>
-  <blockquote>«Рэйки — сокровенное искусство достижения счастья, чудодейственное лекарство от всех болезней»</blockquote>
-  <cite>Микао Усуи</cite>
-</div>
-
-<hr class="hairline">
-
-<section class="wrap">
-  <div class="master">
-    <img src="assets/master.jpg" alt="Юлия Оздемир">
+  <div style="position:relative;z-index:1;display:flex;justify-content:center;gap:80px;padding:56px 40px 64px;flex-wrap:wrap;text-align:center">
     <div>
-      <div class="eyebrow">О Мастере</div>
-      <h2>Юлия Оздемир</h2>
-      <p>Мастер-Учитель Рэйки, остеопракт-биодинамист, психолог-консультант, расстановщик.</p>
-      <p>Практикую Рэйки с 2012 года — и для себя, и как целитель. С 2015 обучаю традиционному западному стилю.</p>
-      <p>Мой подход обходится без эзотерики, оккультных и религиозных построений. На семинаре вы получите ясное понимание: что такое практика Рэйки, откуда она взялась, какие у неё цели, кому и для чего это полезно, как практиковать для себя и для других, как выстроить вокруг этого свою помогающую практику.</p>
-      <p><a href="https://youtu.be/alvhP3CVZBY" target="_blank" rel="noopener">Если остались вопросы — посмотрите видео →</a></p>
+      <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(252,251,248,.60);margin-bottom:8px">Даты</div>
+      <div style="font-family:'Prata',serif;font-size:26px;color:#fff">29–30 августа 2026</div>
+    </div>
+    <div>
+      <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(252,251,248,.60);margin-bottom:8px">Место</div>
+      <div style="font-family:'Prata',serif;font-size:26px;color:#fff">Анталья, Коньяалты</div>
+    </div>
+    <div>
+      <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(252,251,248,.60);margin-bottom:8px">Формат</div>
+      <div style="font-family:'Prata',serif;font-size:26px;color:#fff">Группа, очно</div>
     </div>
   </div>
-</section>
+</div>
 
-<section class="wrap">
-  <div class="eyebrow" style="text-align:center;margin-bottom:var(--sp-3)">Почему стоит выбрать Рэйки</div>
-  <div class="reasons">
-    <div class="reason">
-      <h3>Простое обучение</h3>
-      <p>Семинар идёт два дня. Схему сеанса и медитации вы разбираете на месте, шаг за шагом, и уходите уже владея методом — без предварительной подготовки.</p>
-    </div>
-    <div class="reason">
-      <h3>Мягкий метод</h3>
-      <p>Рэйки не требует физического воздействия — только руки, без нажима и техник. Дальше включаются собственные механизмы саморегуляции организма.</p>
-    </div>
-    <div class="reason">
-      <h3>Глубина и простота вместе</h3>
-      <p>В практике четыре ступени, от первой до мастерской — есть куда расти годами. При этом начинается всё с малого: с сеанса себе.</p>
-    </div>
-    <div class="reason">
-      <h3>Не только для себя</h3>
-      <p>Можно применять не только к себе, но и к близким, клиентам, животным, растениям.</p>
-    </div>
-    <div class="reason">
-      <h3>Без особых условий</h3>
-      <p>Дома, в офисе, в поездке, на отдыхе — Рэйки не требует инструментов или специального места.</p>
-    </div>
-    <div class="reason">
-      <h3>Профессиональная перспектива</h3>
-      <p>В методе заложена возможность выстроить частную оздоровительную практику, если однажды захотите не только применять Рэйки, но и зарабатывать этим.</p>
-    </div>
+<!-- QUOTE -->
+<div style="padding:120px 0 100px;text-align:center">
+  <div class="wrap-narrow" style="display:flex;flex-direction:column;align-items:center;gap:36px">
+    <div class="ornament"><i></i><s></s><i></i></div>
+    <blockquote style="margin:0;font-family:'Prata',serif;font-size:32px;line-height:1.5;color:#0F2A2E;font-style:normal">
+      «Рэйки, сокровенное искусство достижения счастья, чудодейственное лекарство от всех болезней»
+    </blockquote>
+    <cite style="font-style:normal;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:rgba(15,42,46,.48)">Микао Усуи</cite>
   </div>
-</section>
+</div>
 
-<section class="wrap">
-  <div class="trio">
-    <div class="trio-card">
-      <div class="eyebrow">01 · Основа системы</div>
-      <h3>Инициация</h3>
-      <p>Инициация — это передача эталонного состояния баланса и целостности. После инициации способность использовать Рэйки остаётся с вами навсегда.</p>
-    </div>
-    <div class="trio-card">
-      <div class="eyebrow">02 · Сеанс</div>
-      <h3>Практические навыки</h3>
-      <p>На семинаре вы научитесь делать сеанс для себя и для другого. Сможете почувствовать эффективность процедуры, задать вопросы.</p>
-    </div>
-    <div class="trio-card">
-      <div class="eyebrow">03 · Успокоение ума</div>
-      <h3>Медитация</h3>
-      <p>Я покажу несложную, но эффективную медитацию, которая входит в практику Рэйки.</p>
-    </div>
+<hr style="border:0;border-top:1px solid rgba(20,69,75,.12);margin:0">
+
+<!-- О МАСТЕРЕ -->
+<div class="wrap grid-2" style="display:grid;grid-template-columns:420px 1fr;gap:80px;padding:140px 0">
+  <div style="position:relative;height:620px">
+    <div style="position:absolute;inset:-20px 20px 20px -20px;border:1px solid rgba(176,142,99,.4);border-radius:4px;z-index:0"></div>
+    <img src="assets/master.jpg" alt="Юлия Оздемир" style="position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:50% 15%;border-radius:4px;box-shadow:0 40px 80px -40px rgba(15,42,46,.35)">
   </div>
-</section>
-
-<section class="wrap">
-  <div class="eyebrow" style="margin-bottom:var(--sp-3)">Программа</div>
-  <h2 style="margin-bottom:var(--sp-6)">На семинаре вы узнаете</h2>
-  <div class="program">
-    <div class="program-card">
-      <h3>Теория</h3>
-      <p>Что такое практика Рэйки и история создания системы. Разбор иероглифа Рэйки, цели практики, концепция целостности. Что такое энергия Рэйки и где её источник, целительский эффект — чем Рэйки является и чем не является, разбор мифов вокруг практики. Рэйки рядом с другими практиками и рядом с медициной. Правильное произношение и написание. Что даёт практика в двух аспектах — Рэй (Дух) и Ки, жизненная энергия. В каких случаях практика полезна, кому особенно показана, что такое целительский кризис. Стили практики — восточный, западный, нетрадиционные, и четыре её ступени: первая, вторая, третья, мастерская. Отношения между Мастером и студентом.</p>
-    </div>
-    <div class="program-card">
-      <h3>Практика</h3>
-      <p>Как сделать оздоровительный сеанс себе: принципы Рэйки, медитация, дополнительные техники. Как сделать сеанс другому: правила проведения, этика целителя, организация сеанса. Оба разбираете не в теории, а руками — два практических занятия на семинаре.</p>
-    </div>
-    <div class="program-card">
-      <h3>Рэйки в экстренных ситуациях</h3>
-      <p>Высокая температура, сильная боль, сердечный приступ, обморок, несчастный случай, гипертония, переломы, ожоги. Отдельно — Рэйки для детей и пожилых, Рэйки при неизлечимых заболеваниях.</p>
-    </div>
-    <div class="program-card">
-      <h3>Рэйки в быту</h3>
-      <p>Простые техники применения: лечение животных и растений, воздействие на пищу и воду, гармонизация пространства.</p>
-    </div>
+  <div style="height:620px;display:flex;flex-direction:column;justify-content:center;gap:20px">
+    <div class="eyebrow">О Мастере</div>
+    <h2 style="font-size:48px">Юлия Оздемир</h2>
+    <p>Меня зовут Юлия ОздеМир. Я Мастер-Учитель Рэйки, остеопракт-биодинамист, психолог-консультант, расстановщик, автор и ведущая игры «Прикосновение Рэйки». За каждым словом здесь годы практики, и личной трансформации, а не просто дипломы на стене.</p>
+    <div style="height:1px;background:rgba(20,69,75,.14);width:64px;margin:4px 0"></div>
+    <p>Многие начинают с одного и того же: с сомнения, что руки, через которые течёт энергия, могут что-то менять. У меня таких сомнений не было. В 2012 году Рэйки стала моим способом не развалиться окончательно. С 2015-го я этому учу и развеиваю сомнения.</p>
+    <p>Никакой эзотерики, оккультных ритуалов и разговоров про энергии, в которые нужно верить на слово. Только ясность: что такое Рэйки, где источник, зачем нужна, и как встроить практику в свою жизнь, а не держать на отдельной полке для духовных занятий.</p>
+    <p style="margin-top:4px"><a href="https://youtu.be/alvhP3CVZBY" target="_blank" style="border-bottom:1px solid rgba(51,120,126,.3);padding-bottom:2px">Остались вопросы, посмотрите видео →</a></p>
   </div>
-</section>
+</div>
 
-<section class="wrap" id="zapis">
-  <div class="price-section">
-    <div class="eyebrow">Стоимость обучения</div>
-    <div class="price-grid">
-      <div>
-        <h2 style="color:#fff">Групповое обучение<br>1-я ступень Рэйки</h2>
-        <div class="price-includes">
-          По окончании семинара вы получаете:
-          <ul>
-            <li>сертификат о прохождении ступени</li>
-            <li>доступ к обучающим материалам</li>
-          </ul>
-          Семинар проходит с 11:00 до 18:00, с перерывом на обед. С собой рекомендуется взять блокнот, ручку, тапочки, что-то к чаю и перекусить. Адрес пришлём после регистрации.
-        </div>
+<!-- ПОЧЕМУ РЭЙКИ -->
+<div style="background:linear-gradient(180deg,#F1F7F7 0%,#E4EFEF 100%);padding:120px 0">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:72px">
+      <div class="eyebrow" style="margin-bottom:18px">Шесть причин</div>
+      <h2 style="font-size:44px">Почему стоит выбрать Рэйки</h2>
+    </div>
+
+    <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(20,69,75,.12);border:1px solid rgba(20,69,75,.12);border-radius:6px;overflow:hidden">
+
+      <div style="background:#FCFBF8;padding:44px 38px;display:flex;flex-direction:column;gap:18px">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#33787E" stroke-width="1.4"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:19px;color:#0F2A2E">Два дня и вы владеете методом</h3>
+        <p style="font-size:16px;color:rgba(15,42,46,.66);margin:0">Не два месяца, не «начните прямо сейчас и продолжайте всю жизнь», два дня, после которых схема сеанса и медитации у вас в руках, а не в конспекте.</p>
       </div>
-      <div class="price-num">40 000 ₽<small>23 000 турецких лир</small></div>
+
+      <div style="background:#FCFBF8;padding:44px 38px;display:flex;flex-direction:column;gap:18px">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#33787E" stroke-width="1.4"><path d="M8 13V7a2 2 0 0 1 4 0v5M12 12V6a2 2 0 0 1 4 0v6M16 13V8a2 2 0 0 1 4 0v6a7 7 0 0 1-7 7h-1a7 7 0 0 1-6-3.4L3.3 15a1.5 1.5 0 0 1 2.5-1.6L8 15"/></svg>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:19px;color:#0F2A2E">Никакого давления</h3>
+        <p style="font-size:16px;color:rgba(15,42,46,.66);margin:0">Ни в переносном смысле, ни в буквальном. Руки лежат, тело делает остальное само. Мы слишком привыкли решать всё силой, Рэйки работает ровно наоборот.</p>
+      </div>
+
+      <div style="background:#FCFBF8;padding:44px 38px;display:flex;flex-direction:column;gap:18px">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#33787E" stroke-width="1.4"><path d="M3 20h18M6 20V14M12 20V8M18 20v-6"/></svg>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:19px;color:#0F2A2E">Четыре ступени, есть куда расти</h3>
+        <p style="font-size:16px;color:rgba(15,42,46,.66);margin:0">Годами. И при этом всё начинается с одного простого сеанса себе, без экзамена на серьёзность намерений.</p>
+      </div>
+
+      <div style="background:#FCFBF8;padding:44px 38px;display:flex;flex-direction:column;gap:18px">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#33787E" stroke-width="1.4"><circle cx="9" cy="7" r="3.2"/><path d="M2.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6"/><circle cx="18" cy="8.5" r="2.3"/><path d="M15.5 20c.2-2.6 2-4.4 4-4.4"/></svg>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:19px;color:#0F2A2E">Не только для себя</h3>
+        <p style="font-size:16px;color:rgba(15,42,46,.66);margin:0">Близкие. Клиенты. Кошка, которая не любит ветеринара. Растение, которое второй месяц не цветёт. Работает на любого, кто рядом.</p>
+      </div>
+
+      <div style="background:#FCFBF8;padding:44px 38px;display:flex;flex-direction:column;gap:18px">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#33787E" stroke-width="1.4"><path d="M12 2C8 6 6 10 6 13a6 6 0 0 0 12 0c0-3-2-7-6-11Z"/></svg>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:19px;color:#0F2A2E">Без особых условий</h3>
+        <p style="font-size:16px;color:rgba(15,42,46,.66);margin:0">Дома, в дороге, в офисе между звонками. Рэйки не спрашивает подходящих условий, ей не нужны инструменты, только руки, которые и так с вами.</p>
+      </div>
+
+      <div style="background:#FCFBF8;padding:44px 38px;display:flex;flex-direction:column;gap:18px">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#33787E" stroke-width="1.4"><path d="M3 8l9-5 9 5-9 5-9-5Z"/><path d="M7 10.5V16c0 1.5 2.2 3 5 3s5-1.5 5-3v-5.5"/></svg>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:19px;color:#0F2A2E">Профессиональная перспектива</h3>
+        <p style="font-size:16px;color:rgba(15,42,46,.66);margin:0">А если однажды захочется не просто применять, а зарабатывать этим, метод даёт на это право. Не обязательство, а возможность, которой можно не пользоваться.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ТРИ ОПОРЫ -->
+<div class="wrap" style="padding:130px 0">
+  <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px">
+
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <div style="border-radius:6px;overflow:hidden;height:260px"><img src="assets/pillar-1.jpg" alt="Инициация" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%"></div>
+      <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px">
+        <div style="font-family:'Prata',serif;font-size:15px;color:#B08E63">01</div>
+        <h3 style="font-size:26px">Инициация</h3>
+        <div style="width:32px;height:1px;background:rgba(176,142,99,.5)"></div>
+        <p style="font-size:16px;color:rgba(15,42,46,.68)">Передача эталонного состояния баланса и целостности звучит отвлечённо, пока не пройдёшь через это сам. После инициации способность работать с Рэйки никуда не уходит: не через месяц, не через год без практики. Она просто остаётся с вами.</p>
+      </div>
     </div>
 
-    <label class="consent">
-      <input type="checkbox" id="consent-check">
-      <span>Я согласен(на) с условиями <a href="oferta.html" target="_blank">публичной оферты</a> и даю согласие на обработку персональных данных для регистрации на семинар.</span>
-    </label>
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <div style="border-radius:6px;overflow:hidden;height:260px"><img src="assets/pillar-2.jpg" alt="Практика" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%"></div>
+      <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px">
+        <div style="font-family:'Prata',serif;font-size:15px;color:#B08E63">02</div>
+        <h3 style="font-size:26px">Практика</h3>
+        <div style="width:32px;height:1px;background:rgba(176,142,99,.5)"></div>
+        <p style="font-size:16px;color:rgba(15,42,46,.68)">На семинаре я не рассказываю о сеансе, мы его делаем. Себе, потом другому. И где-то между этими практиками приходит ответ на вопрос, который держал вас у порога: работает это или нет.</p>
+      </div>
+    </div>
 
-    <a id="pay-btn" class="btn btn-primary" href="#" aria-disabled="true" target="_blank" rel="noopener">Оплатить и записаться</a>
-    <div class="hint">Приглашаю вас в удивительный мир Рэйки. Кнопка активна после согласия с офертой.</div>
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <div style="border-radius:6px;overflow:hidden;height:260px"><img src="assets/pillar-3.jpg" alt="Медитация" style="width:100%;height:100%;object-fit:cover"></div>
+      <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px">
+        <div style="font-family:'Prata',serif;font-size:15px;color:#B08E63">03</div>
+        <h3 style="font-size:26px">Медитация</h3>
+        <div style="width:32px;height:1px;background:rgba(176,142,99,.5)"></div>
+        <p style="font-size:16px;color:rgba(15,42,46,.68)">Простая медитация без часа в позе лотоса и особого дыхания. Часть практики Рэйки, которую я показываю не как бонус, а как то, без чего остальное не держится.</p>
+      </div>
+    </div>
   </div>
-</section>
+</div>
 
-<footer class="wrap">
-  <div class="contacts">
-    <a href="https://wa.me/79258898812" target="_blank" rel="noopener">WhatsApp +7 925 889 88 12</a>
-    <a href="mailto:ozdemiryulia@gmail.com">ozdemiryulia@gmail.com</a>
-    <a href="https://www.yuliaozdemir.com/" target="_blank" rel="noopener">yuliaozdemir.com</a>
+<!-- ПРОГРАММА -->
+<div style="background:#0F2A2E;color:#FAFDFD;padding:130px 0">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:80px">
+      <div class="eyebrow" style="color:#D8BE9B;margin-bottom:18px">Программа</div>
+      <h2 style="font-size:44px;color:#fff">На семинаре вы узнаете</h2>
+    </div>
+
+    <div class="grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:64px 80px">
+      <div>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:20px;color:#B0D0D1;margin-bottom:16px">Теория</h3>
+        <p style="color:rgba(250,253,253,.72);font-size:16.5px">Не конспект из методички прошлого века, а разговор о том, откуда взялось Рэйки, что стоит за иероглифом, который все видели, но мало кто может объяснить. Что такое энергия Рэйки и где её источник, чем она является и чем точно не является, разбор мифов, которые вокруг этого накопились. Рэйки рядом с медициной, а не вместо неё. Правильное произношение, два аспекта, Рэй и Ки. Когда практика полезна, что такое целительский кризис, какие бывают стили и четыре ступени пути.</p>
+      </div>
+      <div>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:20px;color:#B0D0D1;margin-bottom:16px">Практика</h3>
+        <p style="color:rgba(250,253,253,.72);font-size:16.5px">Как сделать сеанс себе, принципы, медитация, пара дополнительных техник. Как сделать сеанс другому, тут уже свои правила и своя этика, потому что чужое тело не ваше тело. Оба сеанса вы делаете руками на семинаре, а не читаете о них дома. Семинар - это двухдневная работа над вашей проблемой. Вы трансформируетесь.</p>
+      </div>
+      <div>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:20px;color:#B0D0D1;margin-bottom:16px">Рэйки в экстренных ситуациях</h3>
+        <p style="color:rgba(250,253,253,.72);font-size:16.5px">Высокая температура, сильная боль, сердечный приступ, обморок, несчастный случай, гипертония, переломы, ожоги как то, что можно сделать, пока едет помощь, а не вместо неё. Отдельно, дети, пожилые, неизлечимые заболевания: там своя мера аккуратности.</p>
+      </div>
+      <div>
+        <h3 style="font-family:'Manrope';font-weight:700;font-size:20px;color:#B0D0D1;margin-bottom:16px">Рэйки в быту</h3>
+        <p style="color:rgba(250,253,253,.72);font-size:16.5px">Животные, растения, вода, еда, пространство дома, простые техники для того, что происходит каждый день, а не раз в год на ретрите.</p>
+      </div>
+    </div>
   </div>
-  <div class="legal">
-    <a href="oferta.html">Публичная оферта</a> · ИП Оздемир Юлия Владимировна
+</div>
+
+<!-- ПОСЛЕ СЕМИНАРА / СЕРТИФИКАТ -->
+<div style="padding:130px 0 100px">
+  <div class="wrap" style="text-align:center;margin-bottom:56px">
+    <div class="eyebrow" style="margin-bottom:18px">После семинара</div>
+    <h2 style="font-size:42px">Сертификат и группа единомышленников</h2>
   </div>
-</footer>
+
+  <div class="wrap">
+    <img src="assets/certificate.jpg" alt="Выпускницы семинара с сертификатами Рэйки" style="width:100%;border-radius:6px;box-shadow:0 50px 100px -50px rgba(15,42,46,.35)">
+  </div>
+
+  <div class="wrap" style="margin-top:24px">
+    <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <img src="assets/gallery-1.jpg" alt="Выпуск семинара" style="width:100%;height:220px;object-fit:cover;border-radius:6px">
+      <img src="assets/gallery-2.jpg" alt="Выпуск семинара" style="width:100%;height:220px;object-fit:cover;border-radius:6px">
+      <img src="assets/gallery-3.jpg" alt="Выпуск семинара" style="width:100%;height:220px;object-fit:cover;border-radius:6px">
+    </div>
+  </div>
+
+  <div class="wrap grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:90px">
+    <div>
+      <img src="assets/certificate-blank.jpg" alt="Сертификат Reiki Usui Shiki Ryoho" style="border-radius:6px;box-shadow:0 30px 60px -30px rgba(15,42,46,.3)">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div class="eyebrow">Что вы получите</div>
+      <ul style="margin:0;padding-left:20px;color:rgba(15,42,46,.72);font-size:17px;display:flex;flex-direction:column;gap:12px">
+        <li>Сертификат о прохождении ступени</li>
+        <li>Доступ к обучающим материалам</li>
+        <li>Три поддерживающих онлайн-занятия в течение 21 дня после семинара: 2 практических занятия (сеанс для себя) и экспресс-версия игры «Прикосновение Рэйки»</li>
+      </ul>
+      <p style="font-size:16px;color:rgba(15,42,46,.6);margin-top:8px">Семинар идёт с 11:00 до 18:00 (зависит от количества участников), с перерывом на обед. Возьмите блокнот, ручку, адрес пришлю после регистрации.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ЦЕНА / ОПЛАТА -->
+<div class="wrap" style="padding-bottom:140px">
+  <div style="background:linear-gradient(155deg,#14454B 0%,#0F2A2E 100%);border-radius:8px;padding:80px;border:1px solid rgba(216,190,155,.22)">
+    <div class="grid-2" style="display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:center">
+      <div>
+        <div class="eyebrow" style="color:#D8BE9B;margin-bottom:20px">Стоимость обучения</div>
+        <h2 style="font-size:38px;color:#fff;margin-bottom:20px">Групповое обучение<br>1-я ступень Рэйки</h2>
+        <p style="color:rgba(250,253,253,.75);font-size:17px">Приглашаю вас в мир Рэйки.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:32px">
+        <div>
+          <div style="font-family:'Prata',serif;font-size:60px;color:#D8BE9B;line-height:1">40 000 ₽</div>
+          <div style="font-size:16px;color:rgba(216,190,155,.65);margin-top:8px">23 000 турецких лир</div>
+        </div>
+
+        <label style="display:flex;gap:12px;align-items:flex-start;font-size:14.5px;color:rgba(250,253,253,.80);max-width:44ch">
+          <input type="checkbox" id="consent-check" style="margin-top:4px;width:18px;height:18px;accent-color:#DE5B4E;flex:0 0 auto">
+          <span>Я согласен(на) с условиями <a href="oferta.html" target="_blank" style="color:#B0D0D1;border-bottom:1px solid rgba(176,208,209,.5)">публичной оферты</a> и даю согласие на обработку персональных данных для регистрации на семинар.</span>
+        </label>
+
+        <a id="pay-btn" href="#" aria-disabled="true" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;padding:18px 42px;border-radius:999px;background:#5C4A3E;color:#fff;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:none;opacity:.45;pointer-events:none;transition:all .25s ease">Оплатить и записаться</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div style="border-top:1px solid rgba(20,69,75,.12);padding:56px 0 72px;text-align:center">
+  <div style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap;font-size:15px;margin-bottom:20px">
+    <a href="https://wa.me/79258898812" target="_blank" style="border-bottom:1px solid rgba(51,120,126,.25)">WhatsApp +7 925 889 88 12</a>
+    <a href="mailto:ozdemiryulia@gmail.com" style="border-bottom:1px solid rgba(51,120,126,.25)">ozdemiryulia@gmail.com</a>
+    <a href="https://www.yuliaozdemir.com/" target="_blank" style="border-bottom:1px solid rgba(51,120,126,.25)">yuliaozdemir.com</a>
+  </div>
+  <div style="font-size:13px;color:rgba(15,42,46,.44)">
+    <a href="oferta.html" style="color:rgba(15,42,46,.44)">Публичная оферта</a> · ИП Оздемир Юлия Владимировна
+  </div>
+</div>
 
 <script>
   const check = document.getElementById('consent-check');
@@ -303,9 +290,15 @@ footer .legal a{color:var(--text-muted)}
     if(check.checked){
       btn.setAttribute('href', PAY_URL);
       btn.removeAttribute('aria-disabled');
+      btn.style.background = '#DE5B4E';
+      btn.style.opacity = '1';
+      btn.style.pointerEvents = 'auto';
     } else {
       btn.setAttribute('href', '#');
       btn.setAttribute('aria-disabled','true');
+      btn.style.background = '#5C4A3E';
+      btn.style.opacity = '.45';
+      btn.style.pointerEvents = 'none';
     }
   }
   check.addEventListener('change', sync);
