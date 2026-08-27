@@ -68,6 +68,10 @@ img{max-width:100%;display:block}
   .master-photo{height:380px !important;margin-bottom:8px}
   .master-text{height:auto !important}
   h2{font-size:32px !important}
+  .hero-bg{background-attachment:scroll !important}
+}
+@supports (-webkit-touch-callout:none){
+  .hero-bg{background-attachment:scroll !important}
 }
 </style>
 </head>
@@ -75,7 +79,7 @@ img{max-width:100%;display:block}
 
 <!-- HERO -->
 <div style="position:relative;height:92vh;min-height:640px;display:flex;flex-direction:column;color:#FCFBF8;overflow:hidden">
-  <div style="position:absolute;inset:0;background-image:url('assets/hero.jpg');background-size:cover;background-position:50% 45%;background-attachment:fixed"></div>
+  <div class="hero-bg" style="position:absolute;inset:0;background-image:url('assets/hero.jpg');background-size:cover;background-position:50% 45%;background-attachment:fixed"></div>
   <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(15,42,46,.22) 0%, rgba(15,42,46,.10) 30%, rgba(15,42,46,.58) 74%, rgba(15,42,46,.88) 100%)"></div>
 
   <div style="position:relative;z-index:1;text-align:center;padding:36px 40px;font-family:'Manrope';font-size:15px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#fff">
